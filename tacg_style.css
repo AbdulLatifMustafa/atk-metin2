@@ -12,7 +12,7 @@
 	font-weight: bold;
 	color: #751116;
 	border: 2px ridge #751116;
-	background-color:goldenrod;
+	background-color:#f1e5c9;
 	display: inline-block;
 	width: 100px;
 	border-width: 3px;
@@ -22,9 +22,9 @@
 	
 	font-size: 100%;
 	color:rgba(105, 5, 5, 1);
-	border: 2px ridge chocolate;
+	border: 2px ridge #f1e5c9;
 	border-top: #751116;
-	background-color:darkgoldenrod;
+	background-color:#f1e5c9;
 	display: inline-block;
 	width: 100px;
 	text-align: center;
@@ -37,8 +37,8 @@
 	font-weight: bold;
 	color: #751116;
 	border: 8px ridge #751116;
-	background-color: darkgoldenrod;
-	border-color: darkgoldenrod;
+	background-color:#f1e5c9;
+	border-color: #f1e5c9;
 	
 }
 #container {
@@ -57,8 +57,8 @@
 }
 #header {
 	text-align: center;
-	color: #751116;
-	background-color: darkgoldenrod;
+	color: #390007;
+	background-color: #f1e5c9;
 	padding: 1px 0px;
 }
 #pg_parameters {
@@ -71,7 +71,7 @@
 	
 }
 #pg_parameters input {
-	color: #751116;
+	color: #390007;
 	
 }
 #pg_parameters p {
@@ -85,8 +85,8 @@
 	display: table;
 	width: auto;
 	padding: 3px;
-	background-color: darkgoldenrod;
-	border: 2px ridge #751116;
+	background-color: #f1e5c9;
+	border: 2px ridge #390007;
 	border-width: 10px;
 
 	
@@ -96,7 +96,7 @@
 #status_table input {
 	width: 50px;
 	padding: 1px;
-	background-color: goldenrod;
+	background-color:#f1e5c9;
 	
 
 	
@@ -110,9 +110,9 @@
 	overflow: hidden;
 	margin: 0px 0px 0px 5px;
 	padding: 3px;
-	border-color:    chocolate;
-	border: chocolate;
-	background-color: darkgoldenrod;
+	border-color:   #f1e5c9;
+	border: #f1e5c9;
+	background-color: #f1e5c9;
 	display:table-row;
 	font-size: 100%;
 	
@@ -123,13 +123,16 @@
 	display: inline-block;
 	width: 160px;
 	padding: 1px;
-	border: 2px ridge #751116;
+	border: 2px ridge #390007;
 	border-width: 4px;
-	background-color: goldenrod;
+	background-color: #f1e5c9;
+	
 	
 }
 #quests input[type="checkbox"]:checked + label {
-	background-color:  chocolate;
+	background-color: #F1E17A;
+	
+	
 	
 }
 #weapon {
@@ -138,9 +141,9 @@
 	border: 1px dashed;
 	margin: 10px 0px 10px 5px;
 	padding: 20px 10px;
-	background-color:darkgoldenrod;
+	background-color:#f1e5c9;
 	text-align: center;
-	border: 2px ridge #751116;
+	border: 2px ridge #390007;
 	border-width: 8px;
 
 	
@@ -151,8 +154,8 @@
 	margin: 5px;
 	text-align: center;
 	clear: left;
-	border: 2px ridge #751116;
-	background-color: goldenrod;
+	border: 2px ridge#390007;
+	background-color:#f1e5c9;
 	border-width:4px
 	
 	/*border: 1px solid #000066;*/
@@ -160,7 +163,7 @@
 #results_table {
 	width: 100%;
 	vertical-align: middle;
-	border: 2px ridge #751116;
+	border: 2px ridge #390007;
 	border-width: 8px;
 	
 	
@@ -173,19 +176,19 @@
 	height: 40px;
 	padding: 1px;
 	margin: 3px;
-	border: 2px ridge #751116;
-	background-color: goldenrod;
+	border: 2px ridge #390007;
+	background-color: #f1e5c9;
 	font-size: 100%;
 }
 #results_table td {
 	display: table-cell;
-	color:rgba(105, 5, 5, 1);
+	color: #390007;
 	vertical-align: middle;
-	border: 2px ridge #751116;
-	border-color:tan;
-	border-top-color: #751116;
+	border: 2px ridge #390007;
+	border-color:#390007;
+	border-top-color: #390007;
 	border-width: 5px;
-	background-color:goldenrod;
+	background-color:#f1e5c9;
 	width: 80px;
 	height: 40px;
 	padding: 2px;
@@ -198,7 +201,8 @@
 	float: left;
 	width: 100%;
 	margin: 5px 0px;
-	border-color: #751116;
+	border-color:  #390007;
+	
 	
 	
 	
@@ -210,22 +214,22 @@
 	display: inline-block;
 	text-align: center;
 	border-spacing: 5px 1px;
-	border: 2px ridge #751116;
+	border: 2px ridge  #390007;
 	width: auto;
-	background-color: goldenrod;
+	background-color: #f1e5c9;
 	border-width: 10px;
 }
 #bonus_table .parname {
 	width: 200px;
-	background-color:goldenrod;
-	border-color: rgba(105, 5, 5, 1);
+	background-color:#f1e5c9;
+	border-color: #390007;
 	border-width: 3px;
 }
 #bonus_table input {
 	display: inline-block;
-	border-color: rgba(105, 5, 5, 1);
+	border-color:  #390007;
 	width: 50px;
-	background-color: goldenrod;
+	background-color: #f1e5c9;
 	border-width: 2px;
 
 }
@@ -233,30 +237,34 @@
 	position: absolute;
 	display: inline-block;
 	text-align: left;
-	border: 2px ridge #751116;
-	border-color: #751116;
+	border: 2px ridge  #390007;
+	border-color:  #390007;
 	border-width: 6px;
 	width: auto;
 	
-
 }
 #enemyskill {
-	background-color: darkgoldenrod;
+	background-color: #f1e5c9;
 	padding: 5px;
+	
 	
 }
 #enemyskill span.label {
 	display: inline-block;
+	color:  #390007;
 	width: 70px;
 
 	
 }
 #enemyskill input[type="text"] {
 	width: 50px;
-	 border-color: #751116;
-	 background-color: goldenrod;
+	 border-color:  #390007;
+	 background-color: #f1e5c9;
 }
 #enemyskill input[type="radio"]:checked + label {
 	font-weight: bold;
+	background-color: #F1E17A;
+	
+
 	
 }
