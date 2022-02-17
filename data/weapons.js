@@ -18,7 +18,6 @@ if(!tacgGlobals.weapons)
 			atkmin: [14, 22, 30, 38, 46, 54, 62, 70, 78, 86],
 			atkmax: [22, 30, 38, 46, 54, 62, 70, 78, 86, 94],
 			atkspeed: [26, 26, 26, 26, 26, 26, 26, 26, 26, 26],
-			myImage:"https://en-wiki.metin2.gameforge.com/images/9/95/Exorcism_Sword.png",
 			type: 'twohanded'
 			
 		},
@@ -354,6 +353,7 @@ if(!tacgGlobals.weapons)
 			atkmax: [110, 116, 123, 131, 140, 150, 161, 173, 186, 200],
 			atkspeed: [17, 18, 19, 20, 21, 22, 23, 24, 25, 26],
 			type: 'sura-sword'
+			
 		},
 		'شفرة حادة': {
 			level: '80-90',
@@ -453,14 +453,14 @@ if(!tacgGlobals.weapons)
 			atkspeed: [26, 26, 26, 26, 26, 26, 26, 26, 26, 26],
 			type: 'bow'
 		},
-		'Arco della Distruzione': {
+		'قوس مدمر': {
 			level: '36',
 			atkmin: [64, 71, 78, 85, 92, 101, 111, 122, 134, 147],
 			atkmax: [150, 157, 164, 171, 178, 187, 197, 208, 220, 233],
 			atkspeed: [22, 22, 22, 22, 22, 22, 22, 22, 22, 22],
 			type: 'bow'
 		},
-		'قوس مدمر': {
+		'قوس العين الحمراء': {
 			level: '40',
 			atkmin: [65, 72, 79, 86, 93, 102, 112, 123, 135, 148],
 			atkmax: [194, 201, 208, 215, 222, 231, 241, 252, 264, 277],
