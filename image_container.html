@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8" />
+
+
+<html>
+
+
+
+    <style>
+
+#images{
+
+
+  background-image: url("https://ae-wiki.metin2.gameforge.com/images/2/26/Background.png");
+}
+
+
+body {
+  
+ border: aqua;
+    }
+    
+    .hide{
+    display:none;
+    }
+
+    </style>
+    <!--search -->
+    <script>
+          function search(){
+        var searchText = document.getElementById("searchInput").value;
+        var images = document.querySelectorAll(".image_container > img");
+        
+        if(searchText.length > 0){
+          images.forEach((image) => {
+            image.classList.add("hide");
+            if(image.dataset.tags.indexOf(searchText) > -1){
+              image.classList.remove("hide");
+            }
+          });
+        }else{
+          images.forEach((image) => {
+              image.classList.remove("hide");
+          });
+        }
+      }
+    </script>
+<div class="container">
+    <div class="searchbox_container">
+    <div class="searchbox">
+      <input type="search" name=" " placeholder="شكل سلاحك" class="search" style="width: 40%;  font-weight: normal; margin: 0 0 2px 0;" id="searchInput" onkeyup="search()">
+    </div>
+  </div>
+  <body style="text-align:left">
+    <div class="image_container">
+
+  <!-- weapons -->
+        <img id="images"data-tags="سيف" src="https://ae-wiki.metin2.gameforge.com/images/e/ea/%D8%B3%D9%8A%D9%81.png" alt="سيف" 
+         class="actionimages"  >
+        <img id="images" data-tags="سيف طويل" src="https://ae-wiki.metin2.gameforge.com/images/3/33/%D8%B3%D9%8A%D9%81_%D8%B7%D9%88%D9%8A%D9%84.png" alt="سيف طويل" 
+         class="actionimages">
+         <img id="images" data-tags="سيف منجلي" src="https://ae-wiki.metin2.gameforge.com/images/a/aa/%D8%B3%D9%8A%D9%81_%D9%85%D9%86%D8%AC%D9%84%D9%8A.png" alt="سيف منجلي" 
+         class="actionimages">
+         <img id="images" data-tags="سيف خيزراني" src="https://ae-wiki.metin2.gameforge.com/images/3/3a/%D8%B3%D9%8A%D9%81_%D8%AE%D9%8A%D8%B2%D8%B1%D8%A7%D9%86%D9%8A.png" alt="سيف خيزراني" 
+         class="actionimages">
+         <img id="images" data-tags="سيف عريض" src="https://ae-wiki.metin2.gameforge.com/images/9/9e/%D8%B3%D9%8A%D9%81_%D8%B9%D8%B1%D9%8A%D8%B6.png" alt="سيف عريض" 
+         class="actionimages">
+         <img id="images" data-tags="سيف فضي" src="https://ae-wiki.metin2.gameforge.com/images/4/4a/%D8%B3%D9%8A%D9%81_%D9%81%D8%B6%D9%8A.png" alt="سيف فضي" 
+         class="actionimages">
+         <img id="images" data-tags="سيف بدري" src="https://ae-wiki.metin2.gameforge.com/images/a/ad/%D8%B3%D9%8A%D9%81_%D8%A8%D8%AF%D8%B1%D9%8A.png" alt="سيف بدري" 
+         class="actionimages">
+         <img id="images" data-tags="سيف أورشيدي" src="https://ae-wiki.metin2.gameforge.com/images/1/1f/%D8%B3%D9%8A%D9%81_%D8%A3%D9%88%D8%B1%D8%B4%D9%8A%D8%AF%D9%8A.png" alt="سيف أورشيدي" 
+         class="actionimages">
+         <img id="images" data-tags="سيف شاذ" src="https://ae-wiki.metin2.gameforge.com/images/d/dc/%D8%B3%D9%8A%D9%81_%D8%B4%D8%A7%D8%B0.png" alt="سيف شاذ" 
+         class="actionimages">
+         <img id="images" data-tags="سيف بربري" src="https://ae-wiki.metin2.gameforge.com/images/e/e5/%D8%B3%D9%8A%D9%81_%D8%A8%D8%B1%D8%A8%D8%B1%D9%8A.png" alt="سيف بربري"
+         class="actionimages">
+         <img id="images" data-tags="سيف دموي" src="https://ae-wiki.metin2.gameforge.com/images/b/b6/%D8%B3%D9%8A%D9%81_%D8%AF%D9%85%D9%88%D9%8A.png" alt="سيف دموي" 
+         class="actionimages">
+         <img id="images" data-tags="سيف كبير" src="https://ae-wiki.metin2.gameforge.com/images/7/76/%D8%B3%D9%8A%D9%81_%D9%83%D8%A8%D9%8A%D8%B1.png" alt="سيف كبير" 
+         class="actionimages">
+         <img id="images" data-tags="سيف سحري" src="https://ae-wiki.metin2.gameforge.com/images/c/c0/%D8%B3%D9%8A%D9%81_%D8%B3%D8%AD%D8%B1%D9%8A.png" alt="سيف سحري" 
+         class="actionimages">
+         <img id="images" data-tags="سيف هلالي" src="https://ae-wiki.metin2.gameforge.com/images/d/db/%D8%B3%D9%8A%D9%81_%D9%87%D9%84%D8%A7%D9%84%D9%8A.png" alt="سيف هلالي"
+         class="actionimages">
+         <img id="images" data-tags="سيف نمفي" src="https://ae-wiki.metin2.gameforge.com/images/9/9d/%D8%B3%D9%8A%D9%81_%D9%86%D9%85%D9%81%D9%8A.png" alt="سيف نمفي"
+         class="actionimages">
+         <img id="images" data-tags="سيف معركي" src="https://ae-wiki.metin2.gameforge.com/images/5/56/%D8%B3%D9%8A%D9%81_%D9%85%D8%B9%D8%B1%D9%83%D9%8A.png" alt="سيف معركي"
+         class="actionimages">
+         <img id="images" data-tags="سيف لادغ" src="https://ae-wiki.metin2.gameforge.com/images/f/ff/%D8%B3%D9%8A%D9%81_%D9%84%D8%A7%D8%AF%D8%BA.png" alt="سيف لادغ"
+         class="actionimages">
+         <img id="images" data-tags="سيف سام" src="https://ae-wiki.metin2.gameforge.com/images/c/c5/%D8%B3%D9%8A%D9%81_%D8%B3%D8%A7%D9%85.png" alt="سيف سام"
+         class="actionimages">
+         <img id="images" data-tags="سيف تريتون"src="https://ae-wiki.metin2.gameforge.com/images/f/f2/%D8%B3%D9%8A%D9%81_%D8%AA%D8%B1%D9%8A%D8%AA%D9%88%D9%86.png" alt="سيف تريتون"
+         class="actionimages">
+         <img id="images" data-tags="سيف التنين الظلامي"src="https://ae-wiki.metin2.gameforge.com/images/5/52/%D8%B3%D9%8A%D9%81_%D8%A7%D9%84%D8%AA%D9%86%D9%8A%D9%86_%D8%A7%D9%84%D8%B8%D9%84%D8%A7%D9%85%D9%8A.png" alt="سيف التنين الظلامي"
+         class="actionimages">
+         <img id="images" data-tags="سيف خفي"src="https://ae-wiki.metin2.gameforge.com/images/d/d0/%D8%B3%D9%8A%D9%81_%D8%AE%D9%81%D9%8A.png" alt="سيف خفي"
+         class="actionimages">
+         <img id="images" data-tags="سيف زودياك"src="https://ae-wiki.metin2.gameforge.com/images/e/e9/%D8%B3%D9%8A%D9%81_%D8%B2%D9%88%D8%AF%D9%8A%D8%A7%D9%83.png" alt="سيف زودياك"
+         class="actionimages">
+         <img id="images" data-tags="سيف الأفعى"src="https://ae-wiki.metin2.gameforge.com/images/0/0e/%D8%B3%D9%8A%D9%81_%D8%A7%D9%84%D8%A3%D9%81%D8%B9%D9%89.png" alt="سيف الأفعى"
+         class="actionimages">
+         <img id="images" data-tags="غلايف"src="https://ae-wiki.metin2.gameforge.com/images/c/cf/%D8%BA%D9%84%D8%A7%D9%8A%D9%81.png" alt="غلايف"
+         class="actionimages">
+         <img id="images" data-tags="رمح"src="https://ae-wiki.metin2.gameforge.com/images/3/39/%D8%B1%D9%85%D8%AD.png" alt="رمح"
+         class="actionimages">
+         <img id="images" data-tags="شفرة قطع الرأس"src="https://ae-wiki.metin2.gameforge.com/images/4/4d/%D8%B4%D9%81%D8%B1%D8%A9_%D9%82%D8%B7%D8%B9_%D8%A7%D9%84%D8%B1%D8%A3%D8%B3.png" alt="شفرة قطع الرأس"
+         class="actionimages">
+         <img id="images" data-tags="رمح عنكبوتي"src="https://ae-wiki.metin2.gameforge.com/images/8/84/%D8%B1%D9%85%D8%AD_%D8%B9%D9%86%D9%83%D8%A8%D9%88%D8%AA%D9%8A.png" alt="رمح عنكبوتي"
+         class="actionimages">
+         <img id="images" data-tags="رمح ذو رأسين"src="https://ae-wiki.metin2.gameforge.com/images/a/a3/%D8%B1%D9%85%D8%AD_%D8%B0%D9%88_%D8%B1%D8%A3%D8%B3%D9%8A%D9%86.png" alt="رمح ذو رأسين"
+         class="actionimages">
+         <img id="images" data-tags="منجل حربي"src="https://ae-wiki.metin2.gameforge.com/images/7/72/%D9%85%D9%86%D8%AC%D9%84_%D8%AD%D8%B1%D8%A8%D9%8A.png" alt="منجل حربي"
+         class="actionimages">
+         <img id="images" data-tags="شفرة حديدية حمراء"src="https://ae-wiki.metin2.gameforge.com/images/3/36/%D8%B4%D9%81%D8%B1%D8%A9_%D8%AD%D8%AF%D9%8A%D8%AF%D9%8A%D8%A9_%D8%AD%D9%85%D8%B1%D8%A7%D8%A1.png" alt="شفرة حديدية حمراء"
+         class="actionimages">
+         <img id="images" data-tags="معزقة قتالية"src="https://ae-wiki.metin2.gameforge.com/images/d/d9/%D9%85%D8%B9%D8%B2%D9%82%D8%A9_%D9%82%D8%AA%D8%A7%D9%84%D9%8A%D8%A9.png" alt="معزقة قتالية"
+         class="actionimages">
+         <img id="images" data-tags="ساطور حربي"src="https://ae-wiki.metin2.gameforge.com/images/9/92/%D8%B3%D8%A7%D8%B7%D9%88%D8%B1_%D8%AD%D8%B1%D8%A8%D9%8A.png" alt="ساطور حربي"
+         class="actionimages">
+         <img id="images" data-tags="فأس عملاق"src="https://ae-wiki.metin2.gameforge.com/images/2/2c/%D9%81%D8%A3%D8%B3_%D8%B9%D9%85%D9%84%D8%A7%D9%82.png" alt="فأس عملاق"
+         class="actionimages">
+         <img id="images" data-tags="سيف جليدي"src="https://ae-wiki.metin2.gameforge.com/images/3/38/%D8%B3%D9%8A%D9%81_%D8%AC%D9%84%D9%8A%D8%AF%D9%8A.png" alt="سيف جليدي"
+         class="actionimages">
+         <img id="images" data-tags="سيف الاثني عشر شبح"src="https://ae-wiki.metin2.gameforge.com/images/9/91/%D8%B3%D9%8A%D9%81_%D8%A7%D9%84%D8%A7%D8%AB%D9%86%D9%8A_%D8%B9%D8%B4%D8%B1_%D8%B4%D8%A8%D8%AD.png" alt="سيف الاثني عشر شبح"
+         class="actionimages">
+         <img id="images" data-tags="شفرة النجاة"src="https://ae-wiki.metin2.gameforge.com/images/d/d2/%D8%B4%D9%81%D8%B1%D8%A9_%D8%A7%D9%84%D9%86%D8%AC%D8%A7%D8%A9.png" alt="شفرة النجاة"
+         class="actionimages">
+         <img id="images" data-tags="قاتل الأسد"src="https://ae-wiki.metin2.gameforge.com/images/3/3d/%D9%82%D8%A7%D8%AA%D9%84_%D8%A7%D9%84%D8%A3%D8%B3%D8%AF.png" alt="قاتل الأسد"
+         class="actionimages">
+         <img id="images" data-tags="شفرة مغناطيسية"src="https://ae-wiki.metin2.gameforge.com/images/c/c6/%D8%B4%D9%81%D8%B1%D8%A9_%D9%85%D8%BA%D9%86%D8%A7%D8%B7%D9%8A%D8%B3%D9%8A%D8%A9.png" alt="شفرة مغناطيسية"
+         class="actionimages">
+         <img id="images" data-tags="النصير"src="https://ae-wiki.metin2.gameforge.com/images/7/70/%D8%A7%D9%84%D9%86%D8%B5%D9%8A%D8%B1.png" alt="النصير" 
+         class="actionimages">
+         <img id="images" data-tags="شفرة سرقة الروح"src="https://ae-wiki.metin2.gameforge.com/images/6/6e/%D8%B4%D9%81%D8%B1%D8%A9_%D8%B3%D8%B1%D9%82%D8%A9_%D8%A7%D9%84%D8%B1%D9%88%D8%AD.png" alt="شفرة سرقة الروح"
+         class="actionimages">
+         <img id="images" data-tags="سيف الحقد"src="https://ae-wiki.metin2.gameforge.com/images/c/c9/%D8%B3%D9%8A%D9%81_%D8%A7%D9%84%D8%AD%D9%82%D8%AF.png" alt="سيف الحقد"
+         class="actionimages">
+         <img id="images" data-tags="نصل شمسي"src="https://ae-wiki.metin2.gameforge.com/images/9/9b/%D9%86%D8%B5%D9%84_%D8%B4%D9%85%D8%B3%D9%8A.png" alt="نصل شمسي"
+         class="actionimages">
+         <img id="images" data-tags="شفرة التنين الظلامي"src="https://ae-wiki.metin2.gameforge.com/images/9/97/%D8%B4%D9%81%D8%B1%D8%A9_%D8%A7%D9%84%D8%AA%D9%86%D9%8A%D9%86_%D8%A7%D9%84%D8%B8%D9%84%D8%A7%D9%85%D9%8A.png" alt="شفرة التنين الظلامي"
+         class="actionimages">
+         <img id="images" data-tags="شفرة الكيانيت"src="https://ae-wiki.metin2.gameforge.com/images/9/9f/%D8%B4%D9%81%D8%B1%D8%A9_%D8%A7%D9%84%D9%83%D9%8A%D8%A7%D9%86%D9%8A%D8%AA.png" alt="شفرة الكيانيت"
+         class="actionimages">
+         <img id="images" data-tags="نصل زودياك"src="https://ae-wiki.metin2.gameforge.com/images/b/bf/%D9%86%D8%B5%D9%84_%D8%B2%D9%88%D8%AF%D9%8A%D8%A7%D9%83.png" alt="نصل زودياك" 
+         class="actionimages">
+         <img id="images" data-tags="سيف الأفعى العظيم"src="https://ae-wiki.metin2.gameforge.com/images/e/ea/%D8%B3%D9%8A%D9%81_%D8%A7%D9%84%D8%A3%D9%81%D8%B9%D9%89_%D8%A7%D9%84%D8%B9%D8%B8%D9%8A%D9%85.png"alt="سيف الأفعى العظيم"
+         class="actionimages">
+        <!-- Warrior -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+         <script>
+          var imageEls = document.getElementsByTagName("img");
+          for(var i=0;i<imageEls.length;i++){
+             imageEls[i].title=imageEls[i].alt;
+          }
+             </script>
+             
+   
+             
+                
+
+    </div>
+
+
+  </div>
+
+
+  </div>
+  
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
