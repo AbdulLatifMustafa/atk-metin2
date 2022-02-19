@@ -3,9 +3,15 @@
  * License: GNU GPL v3
  */
 
+ object{
 
 
+background-image: url("https://board.ae.metin2.gameforge.com/wcf/images/metin2/bg_pattern.jpg");
+float:center;
+width:350px;
+display:table-row;
 
+}
 
 
 .parname {
@@ -43,12 +49,7 @@
 }
 #container {
 	overflow: hidden;
-	/*border: 2px ridge #751116;*/
-/*	background-color: rgba(30, 13, 0, 0.171);*/
-	/*background-repeat: no-repeat;*/
-/*	background-attachment: fixed;*/
-	/*background-position: center; */
-	/*background-image: url('https://www.wallpapertip.com/wmimgs/6-65863_metin2-events.jpg');*/
+
 
 	
 
@@ -80,6 +81,7 @@
 	height: 25px;
 	
 	
+	
 }
 #pg_main_prop {
 	display: table;
@@ -102,7 +104,7 @@
 	
 }
 #status_table th.resname {
-	font-size: 100%;
+	font-size: 120%;
 	
 }
 #quests {
@@ -113,8 +115,13 @@
 	border-color:   #f1e5c9;
 	border: #f1e5c9;
 	background-color: #f1e5c9;
+	border: 2px ridge #390007;
 	display:table-row;
 	font-size: 100%;
+	position: absolute;
+	top: 200px;
+	left: 600px;
+
 	
 	
 
@@ -126,6 +133,9 @@
 	border: 2px ridge #390007;
 	border-width: 4px;
 	background-color: #f1e5c9;
+	
+	
+
 	
 	
 }
@@ -156,7 +166,7 @@
 	clear: left;
 	border: 2px ridge#390007;
 	background-color:#f1e5c9;
-	border-width:4px
+	border-width:8px
 	
 	/*border: 1px solid #000066;*/
 }
@@ -164,7 +174,7 @@
 	width: 100%;
 	vertical-align: middle;
 	border: 2px ridge #390007;
-	border-width: 8px;
+	border-width: 6px;
 	
 	
 	
@@ -179,6 +189,7 @@
 	border: 2px ridge #390007;
 	background-color: #f1e5c9;
 	font-size: 100%;
+	border-radius: 11px;
 }
 #results_table td {
 	display: table-cell;
@@ -187,12 +198,13 @@
 	border: 2px ridge #390007;
 	border-color:#390007;
 	border-top-color: #390007;
-	border-width: 5px;
+	border-width: 2px;
 	background-color:#f1e5c9;
 	width: 80px;
 	height: 40px;
 	padding: 2px;
 	margin: 3px;
+	border-radius: 11px;
 	
 	
 
@@ -218,6 +230,8 @@
 	width: auto;
 	background-color: #f1e5c9;
 	border-width: 10px;
+	
+
 }
 #bonus_table .parname {
 	width: 200px;

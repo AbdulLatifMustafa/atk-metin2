@@ -155,7 +155,7 @@
          <label for="weapon_name"><span class="parname" style="width: 100%; font-weight: normal; margin: 0 0 2px 0;">السلاح:</span>
            <input id="weapon_name" type="search" style="width: 100%;" onkeyup="tacgUtils.showWeaponHint(this.value)" />
            
-           <object data="image_container.html" width="500" height="200">
+           <object  id="container" data="image_container.html" width="300" height="200">
           </object>
          <head>
       </head>
@@ -188,8 +188,9 @@
     <!-- +++++++++++++++++++++ RESULTS +++++++++++++++++++++++++ -->
     <div id="results">
       <table id="results_table">
+        
         <tr>
-          <th class="resname" style="width: 100%; font-size: 150%; height: auto; margin: 1px;" colspan=8>النتيجة:</th>
+          <th class="resname" style="width: 40%; font-size: 150%; height: auto; margin: 1px;" colspan=8>النتيجة:</th>
         </tr>
         <tr>
           <th class="resname">الضرر الأساسي</th><td id="res_base_atk"></td>
@@ -198,6 +199,7 @@
           <th class="resname">الضرر النهائي الفعلي</th><td id="res_final_eff_atk"></td>
         </tr>
         <tr>
+          
           <th class="resname">الضرر الكلي مع علاوات<br/>(ضد الاعبين)</th><td id="res_eff_atk_bonus_pg"></td>
           <th class="resname">الضرر الكلي مع علاوات<br/>(ضد الوحوش)</th><td id="res_eff_atk_bonus_mob"></td>
           <th class="resname">الضرر ب الثواني بدون دابة<br/>(ضد الوحوش)</th><td id="res_dps_feet_mob"></td>
@@ -214,10 +216,15 @@
 
     <!-- +++++++++++++++++++++ BONUS +++++++++++++++++++++++++ -->
     <div id="bonus">
-      <table id="bonus_table">
+      <table id="bonus_table" >
+        <colgroup>
+          <col span="2" style="background-color: #F1E17A">
+          <col span="3" style="background-color:#F1E17A;">
+        </colgroup>
         <tr>
-          <th class="parname">قوي ضد الوحوش</th>
-          <td><input id="vsmob" type="text" onchange="tacgUtils.fixPerc(this)" /></td>
+          <th  class="parname" >قوي ضد الوحوش</th>
+         
+          <td ><input id="vsmob" type="text" onchange="tacgUtils.fixPerc(this)" /></td>
           <th class="parname">قوي ضد <i>(نوع الوحش)</i></th>
           <td><input id="vsmobtype" type="text" onchange="tacgUtils.fixPerc(this)" /></td>
         </tr>
