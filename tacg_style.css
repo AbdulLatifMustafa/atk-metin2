@@ -118,7 +118,7 @@ display:table-row;
 	border: 2px ridge #390007;
 	display:table-row;
 	font-size: 100%;
-	position: absolute;
+	position: static;
 	top: 200px;
 	left: 600px;
 
@@ -214,6 +214,7 @@ display:table-row;
 	width: 100%;
 	margin: 5px 0px;
 	border-color:  #390007;
+	position: static;
 	
 	
 	
@@ -223,6 +224,7 @@ display:table-row;
 	/*border: 1px dashed blue;*/
 }
 #bonus_table {
+	
 	display: inline-block;
 	text-align: center;
 	border-spacing: 5px 1px;
@@ -230,6 +232,7 @@ display:table-row;
 	width: auto;
 	background-color: #f1e5c9;
 	border-width: 10px;
+	position: static;
 	
 
 }
@@ -245,10 +248,10 @@ display:table-row;
 	width: 50px;
 	background-color: #f1e5c9;
 	border-width: 2px;
-
+	position: static;
 }
 #enemyskill {
-	position: absolute;
+	position: static;
 	display: inline-block;
 	text-align: left;
 	border: 2px ridge  #390007;
