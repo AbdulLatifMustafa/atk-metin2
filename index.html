@@ -3,9 +3,22 @@
 <!-- Theoretical Attack Calculus Gear JavaScript client by Son Gohan (son.gohan.mt2@gmail.com) -->
 <!-- License: GNU GPL v3 -->
 <html>
-  
+  <meta name="viewport" content="width=520, initial-scale=0.5" id="vwPrt">
+  <script>
+    window.onload = function () {
+      if(screen.width > 521) {
+          var vpEl = document.getElementById('vwPrt');
+          vpEl.setAttribute('content','width=520, initial-scale=1');
+      }
+      if(screen.width > 970) {
+          var vpEl = document.getElementById('vwPrt');
+          vpEl.setAttribute('content','width=1024, initial-scale=1');
+      }
+    }
+  </script>
+
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+
   <style>
   body {
   background-image: url("https://en-wiki.metin2.gameforge.com/skins/Metin2/resources/images/background-skin.jpg?4bbe1");
@@ -16,8 +29,7 @@
   background-size: cover;
   position:relative;
   height: auto;
-  
- 
+
   
   }
   </style>
@@ -76,6 +88,7 @@
 <div class="static">
   
   </div>
+
   
     <!-- +++++++++++++++++++++ PARAMETERS +++++++++++++++++++++++++ -->
     <div id="pg_parameters">
@@ -141,8 +154,13 @@
     </div>
 
     <!-- +++++++++++++++++++++ QUESTS +++++++++++++++++++++++++ -->
-    <div id="quests">
+    <div id="quests">   
+
+    
+
+   
       <form action=''>
+     
         <input type="checkbox" name="quest" value="quest_cursebook" id='q_curse' onchange="tacgUtils.updateQuests(this)"><label for='q_curse'>	تجارب البيولوجي (كتاب اللعنة)</label><br>
         <input type="checkbox" name="quest" value="quest_icemarble" id='q_ice' onchange="tacgUtils.updateQuests(this)"><label for='q_ice'>	تجارب البيولوجي (كرة ثلجية)</label><br>
         <input type="checkbox" name="quest" value="quest_tugyi" id='q_tugyi' onchange="tacgUtils.updateQuests(this)"><label for='q_tugyi'>تجارب البيولوجي (لوح توغيس)</label><br>
