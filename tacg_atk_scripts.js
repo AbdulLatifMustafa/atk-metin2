@@ -210,7 +210,7 @@ if(!tacgCalculator)
 			return {
 				I: {
 					pg: (1 + vspgclass / 100.) * (1 + vspg / 100.) * (leadersDone ? 1.08 : 1) * (tugyiDone ? 1.1 : 1),
-					mob: (1 + vsmobtype / 100.) * (1 + vsmob / 100.) * (1 + Elements / 100.) *(tugyiDone ? 1.1 : 1),
+					mob: (1 + vsmobtype / 100.) * (1 + vsmob / 100.) * (1 + Elements / 180.) *(tugyiDone ? 1.1 : 1),
 				},
 				II: {
 					pg: (1 - enemyspdef / 100.) * (1 - blessing / 100.) * (1 - fear / 100.) * (1 + frenzy / 200.),
