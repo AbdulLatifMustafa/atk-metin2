@@ -52,6 +52,7 @@ if(!tacgCalculator)
 			var iq = +$('#int').val() || 1;
 			var atkmin = (weapon && weapon.atkmin && weapon.atkmin[up]) || 0;
 			var atkmax = (weapon && weapon.atkmax && weapon.atkmax[up]) || 0;
+			
 			var stat;
 
 			switch($('#classpg').val()) {
@@ -112,6 +113,7 @@ if(!tacgCalculator)
 			var enemyDefense = +$('#enemydef').val() || 0;
 			var powerups = this.powerups();
 			var bonus = this.bonus();
+			
 			//console.log("enDef = "+enemyDefense+"\npow = "+powerups);
 			console.log("bonus = { I : ["+bonus.I['pg']+", "+bonus.I['mob']+"] },"+
 					"\n{ II : ["+bonus.II['pg']+", "+bonus.II['mob']+"] },"+
@@ -199,6 +201,7 @@ if(!tacgCalculator)
 			var vspg = parseInt($('#vspg').val(),10) || 0;
 			var vsmobtype = parseInt($('#vsmobtype').val(),10) || 0;
 			var vsmob = parseInt($('#vsmob').val(),10) || 0;
+			var Elements = parseInt($('#Elements').val(),4) || 0;
 			var enemyspdef = parseInt($('#enemyspdef').val(),10) || 0;
 			
 			//console.log("pgclass = "+vspgclass+", pg = "+vspg+", leadersDone = "+leadersDone+", tugyi: "+tugyiDone+
@@ -207,7 +210,7 @@ if(!tacgCalculator)
 			return {
 				I: {
 					pg: (1 + vspgclass / 100.) * (1 + vspg / 100.) * (leadersDone ? 1.08 : 1) * (tugyiDone ? 1.1 : 1),
-					mob: (1 + vsmobtype / 100.) * (1 + vsmob / 100.) * (tugyiDone ? 1.1 : 1),
+					mob: (1 + vsmobtype / 100.) * (1 + vsmob / 100.) * (1 + Elements / 100.) *(tugyiDone ? 1.1 : 1),
 				},
 				II: {
 					pg: (1 - enemyspdef / 100.) * (1 - blessing / 100.) * (1 - fear / 100.) * (1 + frenzy / 200.),
