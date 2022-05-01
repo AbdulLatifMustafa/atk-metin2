@@ -78,15 +78,15 @@ if(!tacgUtils)
 					aurath.innerHTML = 'مستوى هالة السيف';
 					aurath.style.visibility = 'visible';	
 					auratd.style.visibility = 'visible';	
-				
+					frenzyth.innerHTML = 'مستوى نشوة الحرب';
+					frenzyth.style.visibility = 'hidden';
+					frenzytd.style.visibility = 'hidden';
 				} else {
-					
-					
+					aurath.style.visibility = 'hidden';	
+					auratd.style.visibility = 'hidden';	
 					frenzyth.style.visibility = 'hidden';
 					frenzytd.style.visibility = 'hidden';
 				}
-				frenzyth.style.visibility = 'hidden';
-				frenzytd.style.visibility = 'hidden';
 				break;
 				case 'ninja':
 					if(jobPG === 'bladefight'||'archery') {
