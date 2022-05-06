@@ -1,21 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <script>
-        window.onload = function () {
-          if(screen.width > 521) {
-              var vpEl = document.getElementById('vwPrt');
-              vpEl.setAttribute('content','width=520, initial-scale=1');
-          }
-          if(screen.width > 970) {
-              var vpEl = document.getElementById('vwPrt');
-              vpEl.setAttribute('content','width=1024, initial-scale=1');
-          }
-        }
-      </script>  
+      <meta name="viewport" content="width=520, initial-scale=0.5" id="vwPrt">
+ 
+ 
   <!-- Design by foolishdeveloper.com -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Flip A Coin</title>
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
@@ -32,11 +22,20 @@ body{
     background: #1f5a82;
 }
 #data{
+    
+    background-color: #ffffff;
+    width: 200px;
+    padding: 10px;
     position: absolute;
-    left: 90px;
-    width: 100%;
-    height: 100%;
-    top: -350px;
+    transform: translate(-50%,-50%);
+    bottom: 15px;
+    left: 50%;
+    box-shadow: 15px 30px 35px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+ 
+
 }
 .container{
     background-color: #ffffff;
@@ -44,8 +43,8 @@ body{
     padding: 35px;
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
+    top: 120%;
+    left:50%;
     box-shadow: 15px 30px 35px rgba(0,0,0,0.1);
     border-radius: 10px;
     -webkit-perspective: 300px;
@@ -200,34 +199,6 @@ resetBtn.addEventListener("click",() => {
   </script>
 
 
-  <div class="container">
-  <div id="data" />
-  </div>
-  <script type="text/javascript">
-    var xmlhttp = new XMLHttpRequest();
-    var url = "https://api.coindesk.com/v1/bpi/currentprice.json";
-
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4  &&  this.status == 200) {
-        var json = JSON.parse(this.responseText);
-        parseJson(json);
-      }		
-    };
-
-    xmlhttp.open("GET", url, true);
-    xmlhttp.send();
-
-    function parseJson(json) {
-      var time =  json["time"]["updated"] ;
-      var usdValue = "1 BTC equals to $" + json["bpi"]["USD"]["rate"];
-      var gbpValue = "1 BTC equals to &pound;" + json["bpi"]["GBP"]["rate"];
-      var euroValue = "1 BTC equals to &euro;" + json["bpi"]["EUR"]["rate"];
-
-      document.getElementById("data").innerHTML = time + 
-	       "<br /><br />" + usdValue + 
-		   "<br />" + gbpValue + 
-		   "<br />" + euroValue;
-}
-</script>
+<footer id="data"><!-- Cryptocurrency Price Widget --><script>!function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,EUR,CNY,GBP",items:"BTC,ETH,LTC,XMR,DASH",backgroundColor:"FFFFFF",streaming:"1",rounded:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();</script></a><!-- /Cryptocurrency Price Widget --></footer>
 </body>
 </html>
