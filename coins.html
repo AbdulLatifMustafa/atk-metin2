@@ -175,5 +175,23 @@ resetBtn.addEventListener("click",() => {
     updateStats();
 });
   </script>
+
+  <script>
+      var settings = {
+  "url": "https://api.binance.com/api/v3/avgPrice?symbol=BTCUSDT",
+  "method": "GET",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+  </script>
+
+
+<object  id="container" data="cryptocurrency prices.html" width="400" height="750">
+</object>
 </body>
 </html>
