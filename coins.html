@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <script>
+        window.onload = function () {
+          if(screen.width > 521) {
+              var vpEl = document.getElementById('vwPrt');
+              vpEl.setAttribute('content','width=520, initial-scale=1');
+          }
+          if(screen.width > 970) {
+              var vpEl = document.getElementById('vwPrt');
+              vpEl.setAttribute('content','width=1024, initial-scale=1');
+          }
+        }
+      </script>  
   <!-- Design by foolishdeveloper.com -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flip A Coin</title>
@@ -18,6 +31,13 @@ body{
     height: 100%;
     background: #1f5a82;
 }
+#data{
+    position: absolute;
+    left: 90px;
+    width: 100%;
+    height: 100%;
+    top: -350px;
+}
 .container{
     background-color: #ffffff;
     width: 400px;
@@ -31,6 +51,7 @@ body{
     -webkit-perspective: 300px;
     perspective: 300px;
 }
+
 .stats{
     display: flex;
     color: #101020;
@@ -122,6 +143,7 @@ button{
          <div class="stats">
              <p id="heads-count">Heads: 0</p>
              <p id="tails-count">Tails: 0</p>
+         
          </div>
         <div class="buttons">
             <button id="flip-button">
@@ -189,9 +211,34 @@ $.ajax(settings).done(function (response) {
 
 
   </script>
+  <div class="container">
+  <div id="data" />
+  </div>
+  <script type="text/javascript">
+    var xmlhttp = new XMLHttpRequest();
+    var url = "https://api.coindesk.com/v1/bpi/currentprice.json";
 
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4  &&  this.status == 200) {
+        var json = JSON.parse(this.responseText);
+        parseJson(json);
+      }		
+    };
 
-<object  id="container" data="cryptocurrency prices.html" width="400" height="750">
-</object>
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+    function parseJson(json) {
+      var time =  json["time"]["updated"] ;
+      var usdValue = "1 BTC equals to $" + json["bpi"]["USD"]["rate"];
+      var gbpValue = "1 BTC equals to &pound;" + json["bpi"]["GBP"]["rate"];
+      var euroValue = "1 BTC equals to &euro;" + json["bpi"]["EUR"]["rate"];
+
+      document.getElementById("data").innerHTML = time + 
+	       "<br /><br />" + usdValue + 
+		   "<br />" + gbpValue + 
+		   "<br />" + euroValue;
+}
+</script>
 </body>
 </html>
