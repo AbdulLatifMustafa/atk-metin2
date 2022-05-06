@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta name="viewport" content="width=520, initial-scale=0.5" id="vwPrt">
+    <script>
+        window.onload = function () {
+          if(screen.width > 521) {
+              var vpEl = document.getElementById('vwPrt');
+              vpEl.setAttribute('content','width=520, initial-scale=1');
+          }
+          if(screen.width > 970) {
+              var vpEl = document.getElementById('vwPrt');
+              vpEl.setAttribute('content','width=1024, initial-scale=1');
+          }
+        }
+      </script>
  
  
   <!-- Design by foolishdeveloper.com -->
@@ -26,6 +37,7 @@ body{
     background-color: #ffffff;
     width: 200px;
     padding: 10px;
+    transform: translate(-80%,80%,10%);
     position: absolute;
     top: -20px;
     right:500px;
